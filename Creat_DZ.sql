@@ -24,7 +24,7 @@ create table if not exists album(
 create table if not exists trek(
 	id_trek int primary key,
 	name_trek varchar(40) not null,
-	duration float4 not null,
+	duration integer not null,
 	id_album int references album(id_album)
 );
 
